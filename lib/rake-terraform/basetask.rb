@@ -17,14 +17,5 @@ module RakeTerraform
     rescue => _
       false
     end
-
-    def get_aws_credentials(creds_file, project = 'default')
-      error = "Could not locate AWS credentials in #{creds_file}!"
-      fail error unless File.exist? creds_file
-
-      credentials = IniParse.parse(File.read(creds_file))
-      { accesskey: credentials[project]['aws_access_key_id'],
-        secretkey: credentials[project]['aws_secret_access_key'] }
-    end
   end
 end
