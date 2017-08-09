@@ -12,7 +12,7 @@ module RakeTerraform
     end
 
     def terraform_installed?
-      `terraform version`
+      %x[terraform version]
       $CHILD_STATUS.success?
     rescue => _
       false

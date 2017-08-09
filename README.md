@@ -1,5 +1,13 @@
 # rake-terraform
 
+## NOTE:
+
+Forked from https://github.com/maclennann/rake-terraform to make more extensive changes and update to include conventions from Terraform 0.10
+
+Also wanted to remove credentials logic as I feel that shouldn't be handled in Rake
+
+---
+
 [![Build Status](https://travis-ci.org/maclennann/rake-terraform.svg?branch=master)](https://travis-ci.org/maclennann/rake-terraform)
 [![Code Climate](https://codeclimate.com/github/maclennann/rake-terraform/badges/gpa.svg)](https://codeclimate.com/github/maclennann/rake-terraform)
 [![Test Coverage](https://codeclimate.com/github/maclennann/rake-terraform/badges/coverage.svg)](https://codeclimate.com/github/maclennann/rake-terraform)
