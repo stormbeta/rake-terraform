@@ -14,17 +14,13 @@ module RakeTerraform
         "#{PROJECT_ROOT}/non/existent/output/file.tf"
       end
       let(:default_input_dir_str) { "#{PROJECT_ROOT}/terraform" }
-      let(:default_aws_project_str) { 'default' }
       let(:default_output_file_str) do
         "#{PROJECT_ROOT}/output/terraform/plan.tf"
       end
-      let(:default_credentials_str) { File.expand_path('~/.aws/credentials') }
       let(:default_opts_hash) do
         {
           input_dir: default_input_dir_str,
           output_file: default_output_file_str,
-          credentials: default_credentials_str,
-          aws_project: default_aws_project_str,
           unique_state: false,
           state_file: nil
         }
